@@ -10,8 +10,10 @@
 
 ```sh
 go build -o branch-name .
-# або глобально:
-go install .
+
+# глобально на macOS/Linux (~/.local/bin має бути в PATH)
+go build -o ~/.local/bin/branch-name .
+# або: go install .   (кладе в $(go env GOPATH)/bin — додайте її в PATH)
 
 # збірка для Windows (з будь-якої ОС)
 GOOS=windows GOARCH=amd64 go build -o branch-name.exe .

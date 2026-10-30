@@ -18,8 +18,10 @@ Requires Go 1.27+.
 
 ```sh
 go build -o branch-name .
-# or install globally:
-go install .
+
+# install globally on macOS/Linux (~/.local/bin must be in PATH)
+go build -o ~/.local/bin/branch-name .
+# or: go install .   (puts it in $(go env GOPATH)/bin, add that to PATH)
 
 # build for Windows (from any OS)
 GOOS=windows GOARCH=amd64 go build -o branch-name.exe .

@@ -1,4 +1,4 @@
-module branch_name
+module branch-name
 
 go 1.27.1
 
